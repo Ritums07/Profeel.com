@@ -1,0 +1,59 @@
+<html>
+    <body style="background-color: lightgreen;" >
+        <div>
+            <h1 style="color: lightgreen; background-color: white; font-family: cursive; font-style: italic; padding: 20px; margin-bottom: 30px;">Profeel</h1>
+        </div>
+        <div style="float: left; padding: 20px; font-size: 20px; font-family: sans-serif; text-decoration: none;">
+                    <a style="text-decoration: none; background-color: white; color: lightgreen; padding: 20px 30px 20px 30px;" href="home.html">Home</a>
+                    <a style="text-decoration: none; background-color: green; color: white; padding: 20px 30px 20px 30px;" href="pictures.html">Pictures</a>
+                    <br>
+                    <br>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div style="font-family: sans-serif; color: green; font-style: italic">
+                    <img style="height: 100px; width: 100px;" src="C:\Users\Admin\Dropbox\Min PC (LAPTOP-61FS5KR2)\Desktop\AIK.jpeg">
+                    <p>AIK: Störst, Bäst och Vackrast</p>
+                    <p>30kr</p>
+                    <button id="buy" type="submit">Buy</button>
+                    <br>
+                    <br>
+                    <img style="height: 100px; width: 100px;" src="C:\Users\Admin\Dropbox\Min PC (LAPTOP-61FS5KR2)\Desktop\AIK-Retro.jpeg">
+                    <p>AIK: Retro</p>
+                    <p>30kr</p>
+                    <br>
+                    <br>
+                    <img style="height: 100px; width: 100px;" src="C:\Users\Admin\Dropbox\Min PC (LAPTOP-61FS5KR2)\Desktop\AIK-Derbydrommar.jpeg">
+                    <p>AIK: Derbydrömmar</p>
+                    <p>20kr</p>
+                    <br>
+                    <br>
+                    <img style="height: 100px; width: 100px;" src="C:\Users\Admin\Dropbox\Min PC (LAPTOP-61FS5KR2)\Desktop\GIF-Sundsvall.jpeg">
+                    <p>GIF Sundsvall: Norrlands Stolthet</p>
+                    <p>30kr</p>
+        </div>
+    </body>
+    <script src="https://smtpjs.com/v3/smtp.js">
+        var Buy = document.getElementById("buy");
+        Buy.onclick = function(){
+            sendEmail()
+        }
+
+
+        function sendEmail() {
+        Email.send({
+        Host: "smtp.gmail.com",
+        To: 'viktor.ritums@gmail.com',
+        From: "viktor.ritums@gmail.com",
+        Subject: "Buy",
+        Body: "AIK was baught",
+      })
+        .then(function (message) {
+          alert("mail sent successfully")
+        });
+    }
+    </script>
+</html>
