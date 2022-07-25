@@ -18,42 +18,30 @@
                     <img style="height: 100px; width: 100px;" src="AIK.jpeg">
                     <p>AIK: Störst, Bäst och Vackrast</p>
                     <p>30kr</p>
-                    <button id="buy" type="submit">Buy</button>
+                    <button style="text-decoration: none; background-color: green; color: white; padding: 20px 30px 20px 30px; border-radius: 50px;" id="buy" type="submit">Buy</button>
                     <br>
                     <br>
                     <img style="height: 100px; width: 100px;" src="AIK-Retro.jpeg">
                     <p>AIK: Retro</p>
                     <p>30kr</p>
+                    <button style="text-decoration: none; background-color: green; color: white; padding: 20px 30px 20px 30px; border-radius: 50px;" id="buy" type="submit">Buy</button>
                     <br>
                     <br>
                     <img style="height: 100px; width: 100px;" src="AIK-Derbydrommar.jpeg">
                     <p>AIK: Derbydrömmar</p>
                     <p>20kr</p>
+                    <button style="text-decoration: none; background-color: green; color: white; padding: 20px 30px 20px 30px; border-radius: 50px;" id="buy" type="submit">Buy</button>
                     <br>
                     <br>
                     <img style="height: 100px; width: 100px;" src="GIF-Sundsvall.jpeg">
                     <p>GIF Sundsvall: Norrlands Stolthet</p>
                     <p>30kr</p>
+            <button style="text-decoration: none; background-color: green; color: white; padding: 20px 30px 20px 30px; border-radius: 50px;" id="buy" type="submit">Buy</button>
         </div>
     </body>
     <script src="https://smtpjs.com/v3/smtp.js">
         var Buy = document.getElementById("buy");
         Buy.onclick = function(){
-            sendEmail()
         }
-
-
-        function sendEmail() {
-        Email.send({
-        Host: "smtp.gmail.com",
-        To: 'viktor.ritums@gmail.com',
-        From: "viktor.ritums@gmail.com",
-        Subject: "Buy",
-        Body: "AIK was baught",
-      })
-        .then(function (message) {
-          alert("mail sent successfully")
-        });
-    }
     </script>
 </html>
